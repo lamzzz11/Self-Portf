@@ -3,22 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Self Portofolio</title>
+    <meta
+      name="description"
+      content="Portofolio Ahmad Darussalam - Web Developer. Membangun Aplikasi Web dari tampilan hingga sistem dibaliknya."
+    />
+    <meta name="author" content="Ahmad Darussalam" />
+    <meta property="og:title" content="Ahmad Darussalam — Web Developer" />
+    <meta property="og:description" content="Portofolio pribadi" />
+    <meta property="og:image" content="img/f1.jpg" />
+    <title>Ahmad Darussalam - Web Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="profile">
-      <h1>Ahmad Darussalam</h1>
-      <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-          excepturi autem? Incidunt dolor at culpa soluta cumque sapiente facere
-          totam consequatur doloremque illum qui, nihil ipsum repudiandae hic
-          tenetur sed?
-        </p>
-        <img src="img/f1.jpg" alt="image">
-    </section>
-    <section id="link"></section>
-    <section id="Project"></section>
-    <section id="Contact"></section>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#" aria-label="Beranda">ad.</a>
+          <span>| Portofolio Pribadi</span>
+        </div>
+        <div class="page">
+          <a href="#project">Proyek</a>
+          <a href="#contact">Contact me</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
+        <div class="profile-wrapper">
+          <p>halo, Saya Lam.</p>
+          <h1>Ahmad Darussalam</h1>
+          <p>
+            Saya membangun aplikasi web dari tampilan hingga sistem di baliknya.
+            Fokus saya sederhana: pengalaman yang nyaman, kode yang rapi, dan
+            solusi yang berguna.
+          </p>
+          <img src="img/f1.jpg" alt="foto profil Ahmad Darussalam" />
+        </div>
+      </section>
+      <hr />
+      <section id="project">
+        <h2>Proyek Pilihan</h2>
+        <div class="project-grid">
+          <a
+            class="card"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Lihat detail proyek Ruang Kerja"
+          >
+            <img
+              src="img/simply-lovely.jpg"
+              alt="Preview aplikasi Ruang Kerja"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Ruang Kerja</h3>
+              <p>
+                Aplikasi manajemen tugas untuk merencanakan, mengatur prioritas,
+                dan bekerja bersama tim.
+              </p>
+              <p class="tags">React / Node.Js /PostgreSQL</p>
+            </div>
+          </a>
+        </div>
+        <div class="project-grid">
+          <a
+            class="card"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Lihat detail proyek Ruang Cerita"
+          >
+            <img
+              src="img/dream-big.jpg"
+              alt="Preview aplikasi Ruang Cerita"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Ruang Cerita</h3>
+              <p>
+                Website jurnal dengan tampilan yang ringan dan panel admin untuk
+                mengelola artikel serta kategori.
+              </p>
+              <p class="tags">Next.Js / Tailwind CSS / Prisma</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="contact">
+        <div class="contact-me">
+          <h2>Contact Me</h2>
+          <p>Punya ide untuk sebuah website? Mari mulai percakapan.</p>
+          <a href="mailto:ahmaddarussalam202@gmail.com"
+            ><img src="img/envelope-solid-full.svg" alt="" />Email Saya</a
+          >
+        </div>
+        <div class="f-inf">
+          <p>
+            @
+            <span id="year"></span>
+            Ahmad Darussalam
+          </p>
+          <p>My Portofolio</p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
